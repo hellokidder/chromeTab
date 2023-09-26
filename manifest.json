@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Kidder Extension",
+    "version": "0.1.0",
+    "icons": {
+        "48": "images/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "48":"images/icon.png"
+        }
+    },
+    "permissions": ["scripting","activeTab","tabs","commands"],
+    "commands": {
+        "myShortcut": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+O",
+            "mac": "MacCtrl+Shift+O"
+          },
+          "description": "My Shortcut"
+        }
+      }
+}
